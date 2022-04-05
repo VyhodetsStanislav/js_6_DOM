@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><a href="/index.html">на главную</a></p>
+    <h1>
+      Вывести целое число без букв и запятых. parseInt работает до первого не
+      числа
+    </h1>
+    <h3>Код js</h3>
+    <p>const a = "50px";</p>
+    <p>console.log(a);</p>
+    <p>const result = Number.parseInt(a);</p>
+    <p>console.log("Число после функции Number.parseInt(a) = ", result);</p>
+    <p>const b = "3dd234550px";</p>
+    <p>console.log(b);</p>
+    <p>const result2 = Number.parseInt(b);</p>
+    <p>console.log("parseInt работает до первого не числа = ", result2);</p>
+    <h3>Вытянуть также числа после точки (Number.parseFloat)</h3>
+    <h3>Код js</h3>
+    <p>console.log("Вытянуть также числа после точки (Number.parseFloat)");</p>
+    <p>let r = "200.74px";</p>
+    <p>r = Number.parseFloat(r);</p>
+    <p>console.log(r);</p>
+
+    <h3>Введенный текст всегда будет строкой</h3>
+    <p>console.log( typeof quantity);</p>
+    <h3>Функция Number преобразовывается в чесло введеный текст</h3>
+    <p>const quantityNumber = Number(quantity);</p>
+    <p>
+      console.log( "Функция Number преобразовывается в чесло введеный текст ",
+      typeof quantityNumber );
+    </p>
+
+    <script src="/js/1-zadanieJS/nomber.js" type="module"></script>
+  </body>
+</html>

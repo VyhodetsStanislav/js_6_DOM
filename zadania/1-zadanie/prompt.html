@@ -9,9 +9,17 @@
   <body>
     <p><a href="/index.html">на главную</a></p>
     <h1>Вывести диологовое акно с вводом prompt</h1>
-    <p>Код js</p>
+    <h3>Код js</h3>
     <p>const quantity = prompt("Введите каличество товаров");</p>
     <p>console.log(quantity);</p>
+    <h3>Введенный текст всегда будет строкой</h3>
+    <p>console.log( typeof quantity);</p>
+    <h3>Функция Number преобразовывается в чесло введеный текст</h3>
+    <p>const quantityNumber = Number(quantity);</p>
+    <p>
+      console.log( "Функция Number преобразовывается в чесло введеный текст ",
+      typeof quantityNumber );
+    </p>
 
     <script src="/js/1-zadanieJS/prompt.js" type="module"></script>
   </body>
