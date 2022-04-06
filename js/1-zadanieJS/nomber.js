@@ -11,3 +11,15 @@ console.log("Вытянуть также числа после точки (Numbe
 let r = "200.74px";
 r = Number.parseFloat(r);
 console.log(r);
+
+let salari = 1300.1647;
+// .toFixed(2) два символа после запятой преобразовывает значение в страку
+salari = salari.toFixed(2);
+console.log(
+  ".toFixed(2) два символа после запятой, преобразовывает значение в страку"
+);
+console.log(salari);
+// Пример 2
+let t = 1300.1647;
+console.log("три знака после запятой с переводом в цыфры");
+console.log(Number(t.toFixed(3)));

@@ -21,21 +21,28 @@
     <p>console.log(b);</p>
     <p>const result2 = Number.parseInt(b);</p>
     <p>console.log("parseInt работает до первого не числа = ", result2);</p>
+
     <h3>Вытянуть также числа после точки (Number.parseFloat)</h3>
     <h3>Код js</h3>
     <p>console.log("Вытянуть также числа после точки (Number.parseFloat)");</p>
     <p>let r = "200.74px";</p>
     <p>r = Number.parseFloat(r);</p>
     <p>console.log(r);</p>
-
-    <h3>Введенный текст всегда будет строкой</h3>
-    <p>console.log( typeof quantity);</p>
-    <h3>Функция Number преобразовывается в чесло введеный текст</h3>
-    <p>const quantityNumber = Number(quantity);</p>
+    <h3>
+      .toFixed(2) два символа после запятой преобразовывает значение в страку
+    </h3>
+    <h3>Код js</h3>
+    <p>let salari = 1300.1647;</p>
+    <p>salari = salari.toFixed(2);</p>
     <p>
-      console.log( "Функция Number преобразовывается в чесло введеный текст ",
-      typeof quantityNumber );
+      console.log( ".toFixed(2) два символа после запятой, преобразовывает
+      значение в страку" );
     </p>
+    <p>console.log(salari);</p>
+    <h4>Пример 2</h4>
+    <p>let t = 1300.1647;</p>
+    <p>console.log("три знака после запятой с переводом в цыфры");</p>
+    <p>console.log(Number(t.toFixed(3)));</p>
 
     <script src="/js/1-zadanieJS/nomber.js" type="module"></script>
   </body>
