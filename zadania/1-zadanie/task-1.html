@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><a href="/index.html">на главную</a></p>
+    <h1>Скрипт который проверяет вхождения числа в отрезок x1 и x2</h1>
+
+    <h3></h3>
+
+    <h2>Код js</h2>
+    <p>const x1 = 10; <br>
+        const x2 = 50;<br>
+        const nomber = 15;<br>
+        <p></p>
+        console.log(`Число ${nomber} попадает в отрезок до ${x1}`, nomber < x1);<br>
+        console.log(`Число ${nomber} попадает в отрезок после ${x2}`, nomber > x2);<br>
+      <p></p>
+        const res = nomber > x1 && nomber < x2;<br>
+        console.log(`Число ${nomber} попадает в отрезок от ${x1} до ${x2} `, res);<br>
+        
+        const res2 = nomber < x1 || nomber > x2;<br>
+        console.log(
+          `Число ${nomber} попадает в отрезок до ${x1} или после ${x2} `,
+          res2
+        );</p>
+    <p></p>
+
+    <script src="/js/1-zadanieJS/task-1.js" type="module"></script>
+  </body>
+</html>
