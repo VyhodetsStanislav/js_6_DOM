@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><a href="/index.html">на главную</a></p>
+    <p><a href="/zadania/2-zadanie/zadaci-2.html">Задание 2</a></p>
+    <h1>Блочная область видимости</h1>
+    <h4>
+        Switch
+    </h4>
+
+    <h3>Напеши скрипт выбора стоимости отеля по каличеству звезд</h3>
+    <h4>1 - 20$, 2 - 30$, 3 - 50$, 4 - 70$, 5 - 120$</h4>
+    <h5>если в переменной  что-то кроме числа 1-5, выводим страку "такого количества звезд нет"</h5>
+<p>JS код</p>
+<p></p>
+<p>
+    // stars количество звезд отеля <br>
+    const stars = 4;<br>
+    // prise цена<br>
+    let prise;<br>
+    <p></p>
+    switch (stars) {<br>
+      case 1:<br>
+        prise = 20;<br>
+        break;<br>
+      case 2:<br>
+        prise = 30;<br>
+        break;<br>
+      case 3:<br>
+        prise = 50;<br>
+        break;<br>
+      case 4:<br>
+        prise = 70;<br>
+        break;<br>
+      case 5:<br>
+        prise = 120;<br>
+        break;<br>
+      default:<br>
+        console.log("такого количества звезд нет");<br>
+    }<br>
+    console.log(prise);
+
+
+</p>
+
+
+
+    <script src="/js/2-zadanieJS/switch.js" type="module"></script>
+  </body>
+</html>

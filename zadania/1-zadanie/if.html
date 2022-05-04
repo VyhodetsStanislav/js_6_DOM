@@ -12,9 +12,24 @@
     <p>
       if(выражение если truo выполняется folse не выполняется) {<br />
       тело выполняется если выражение верно }<br />
-      else { если if не выполняется то выполняется else }
+      else if(выражение следующее) <br />
+      else { если не одно выражение не выполнилось выполняется else }
+    </p>
+    <h3>JS код</h3>
+    <p>
+      const salari = 1000;<br />
+<p></p>
+      if (salari < 500) {<br />
+      console.log("Уровень 1");<br />
+      } else if (salari > 500 && salari < 1500) {<br />
+      console.log("Уровень 2");<br />
+      } else if (salari > 1500 && salari < 3000) {<br />
+      console.log("Уровень 3");<br />
+      } else {<br />
+      console.log("Уровень 4");<br />
+      }<br />
     </p>
 
-    <script src="/js/1-zadanieJS/includes.js" type="module"></script>
+    <script src="/js/1-zadanieJS/if.js" type="module"></script>
   </body>
 </html>
