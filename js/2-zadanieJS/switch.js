@@ -31,6 +31,11 @@ switch (stars) {
   case 5:
     prise = 120;
     break;
+  // групперовка кейсов для одного числа
+  case 6:
+  case 7:
+    prise = 200;
+    break;
   default:
     console.log("такого количества звезд нет");
 }

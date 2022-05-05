@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><a href="/index.html">на главную</a></p>
+    <p><a href="/zadania/2-zadanie/zadaci-2.html">Задание 2</a></p>
+    <h1>Блочная область видимости</h1>
+    <h4>
+        Switch
+    </h4>
+
+    <h3>Напеши скрипт выбора опций доставки товара</h3>
+    <h4>Опция хранимтся в переменной option: 1 - самовывоз, 2 - курьер, 3 - почта</h4>
+    <h5>Разбиваем задачу
+        <ol>
+            <li>сделать переменные</li>
+            <li>сделать switch 1 2 3</li>
+            <li>в каждом кейсе записывать в massage строку</li>
+            <li>сделать лог massage</li>
+        </ol>
+    </h5>
+<p>JS код</p>
+<p></p>
+<p>
+const option = 2;<br>
+let massage = "";<br>
+<p></p>
+switch (option) {<br>
+  case 1:<br>
+    massage = "самовывоз";<br>
+    break;<br>
+  case 2:<br>
+    massage = "курьер";<br>
+    break;<br>
+  case 3:<br>
+    massage = "почта";<br>
+    break;<br>
+  default:<br>
+    massage = "вам перезвонит менеджер";<br>
+}<br>
+<p></p>
+console.log(massage);<br>
+
+</p>
+
+
+
+    <script src="/js/2-zadanieJS/switch-zadaca.js" type="module"></script>
+  </body>
+</html>
