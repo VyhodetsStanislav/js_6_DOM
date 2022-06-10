@@ -33,6 +33,8 @@ switch (stars) {
     break;
   // групперовка кейсов для одного числа
   case 6:
+    prise = 180;
+    break;
   case 7:
     prise = 200;
     break;
