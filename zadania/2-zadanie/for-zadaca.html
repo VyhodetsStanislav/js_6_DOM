@@ -33,13 +33,26 @@
     </h5>
 
     <p>JS код</p>
-    <p></p>
-    <p>
-      for (let i = 0; i <= 500; i += 1) { <br />
-      console.log(i); <br />
-      } <br />
+  // 1 сделать вары<br />
+const minSalary = 500;<br />
+const maxSalary = 5000;<br />
+const employees = 4;<br />
+let totalSalary = 0;<br />
+// 2 перебрать работников в цикле<br />
+for (let i = 1; i <= employees; i += 1) {<br />
+  // 3 сгенерировать случайную зарплат<br />
+  const salary = Math.round(<br />
+    Math.random() * (maxSalary - minSalary) + minSalary<br />
+  );<br />
+  console.log(`ЗП работника номер ${i} - ${salary}`);<br />
+  // 4 прибавить к тоталу<br />
+  totalSalary += salary;<br />
+}<br />
+// 5 лог<br />
+console.log("totalSalary", totalSalary);<br />
+
     </p>
 
-    <script src="/js/2-zadanieJS/switch-zadaca.js" type="module"></script>
+    <script src="/js/2-zadanieJS/for-zadaca.js" type="module"></script>
   </body>
 </html>
