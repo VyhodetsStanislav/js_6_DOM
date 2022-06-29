@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><a href="/index.html">на главную</a></p>
+    <p><a href="/zadania/2-zadanie/zadaci-2.html">Задание 2</a></p>
+    <h1></h1>
+    <h4></h4>
+
+    <h3>Цикл for...of</h3>
+    Конструкция for...of объявляет цикл, перебирающий итерируемые объекты, такие
+    как массивы и строки. Тело цикла будет выполняться для значения каждого
+    элемента. Это хорошая замена циклу for если не нужен доступ к счётчику
+    итерации.<br />
+
+    for (const variable of iterable) {<br />
+    // тело цикла<br />
+    }<br />
+
+    variable — переменная которая будет хранить значение элемента на каждой
+    итерации.<br />
+    iterable — коллекция, которая имеет перечислимые элементы, например
+    массив.<br />
+    <p></p>
+    <p>Пример</p>
+
+    const clients = ["Mango", "Ajax", "Poly"];<br />
+    <br />
+    for (const client of clients) {<br />
+    console.log(client);<br />
+    }<br />
+    <br />
+    const string = "javascript";<br />
+    <br />
+    for (const character of string) {<br />
+    console.log(character);<br />
+    }<br />
+
+    <script src="/js/3-zadanieJS/for_of.js" type="module"></script>
+  </body>
+</html>

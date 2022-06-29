@@ -15,11 +15,11 @@
     - В результате вывести сообщение
      " Оформляем заказ на сумму [свмма] со скидкой [скидка]% "*/
 
-const totalSpent = 3000; //сумма потраченого
-const payment = 300; // текущий платеж
+let totalSpent = 3000; //сумма потраченого
+let payment = 300; // текущий платеж
 let discount = 0; // скидки
-// let summaObc = totalSpent + payment;
-// console.log(summaObc);
+console.log(`сумма потраченого до этого ${totalSpent}`);
+console.log(`текущий платеж ${payment}`);
 if (100 <= totalSpent && totalSpent < 1000) {
   console.log("бронзовый партнер, скидка 2%");
   discount = 0.02;
@@ -34,6 +34,11 @@ if (100 <= totalSpent && totalSpent < 1000) {
   discount = 0;
 }
 
+payment -= payment * discount;
 console.log(
   `Оформляем заказ на сумму ${payment} со скидкой ${discount * 100}%`
 );
+
+totalSpent += payment;
+
+console.log(`Общая сумма потраченого в магазине: ${totalSpent}`);

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><a href="/index.html">на главную</a></p>
+    <p><a href="/zadania/2-zadanie/zadaci-2.html">Задание 2</a></p>
+    <h1></h1>
+    <h4></h4>
+
+    <h3>Операторы break</h3>
+    Будем искать имя клиента в массиве имен, если нашли - прервем цикл, так как
+    нет смысла искать дальше, имена у нас уникальные.<br />
+    <br />
+    const clients = ["Mango", "Poly", "Ajax"];<br />
+    const clientNameToFind = "Poly";<br />
+    let message;<br />
+    <br />
+    for (const client of clients) {<br />
+    // На каждой итерации будем проверять совпадает ли элемент массива с<br />
+    // именем клиента. Если совпадает то мы записываем в message сообщение<br />
+    // об успехе и делаем break чтобы не искать дальше<br />
+    if (client === clientNameToFind) {<br />
+    message = "Клиент с таким именем есть в базе данных!";<br />
+    break;<br />
+    }<br />
+    <br />
+    // Если они не совпадают то запишем в message сообщение об отсутствии
+    имени<br />
+    message = "Клиента с таким именем нету в базе данных!";<br />
+    }<br />
+
+    console.log(message); // "Клиент с таким именем есть в базе данных!"<br />
+    <br />
+    Можно изначально задать message значение неудачи поиска, а в цикле
+    перезаписать его на успех, если нашли имя. Но break все равно пригодится,
+    так как если у нас массив из 10000 клиентов, а нужный нам стоит на позиции
+    2, то нет абсолютно никакого смысла перебирать оставшиеся 9998 элементов.<br />
+    <br />
+    <script src="/js/3-zadanieJS/break.js" type="module"></script>
+  </body>
+</html>
