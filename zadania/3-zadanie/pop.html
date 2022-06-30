@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><a href="/index.html">на главную</a></p>
+    <p><a href="/zadania/3-zadanie/zadaci-3.html">Задание 3</a></p>
+    <h1></h1>
+    <h4></h4>
+
+    <h3>Методы push() и pop()</h3>
+    <p>Добавляют или удаляют крайние элементы массива. Работают только с крайним левым и крайним правым элементом и не могут поставить или удалить элемент с произвольной позиции.</p>
+    <p>Метод pop() удаляет последний элемент из конца массива и возвращает удаленный элемент. Если массив пустой, метод возвращает undefined.</p>
+<br />
+const numbers = [1, 2, 3, 4, 5];<br />
+<br />
+console.log(numbers.pop()); //  5<br />
+console.log(numbers); // [1, 2, 3, 4]<br />
+<br />
+console.log(numbers.pop()); //  4<br />
+console.log(numbers); // [1, 2, 3]<br />
+<br />
+console.log(numbers.pop()); //  3<br />
+console.log(numbers); // [1, 2]<br />
+<br />
+console.log(numbers.pop()); //  2<br />
+console.log(numbers); // [1]<br />
+<br />
+console.log(numbers.pop()); //  1<br />
+console.log(numbers); // []   <br />
+
+<br />
+ <br />
+
+
+    <script src="/js/3-zadanieJS/pop.js" type="module"></script>
+  </body>
+</html>

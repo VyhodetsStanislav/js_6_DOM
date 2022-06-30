@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><a href="/index.html">на главную</a></p>
+    <p><a href="/zadania/3-zadanie/zadaci-3.html">Задание 3</a></p>
+    <h1></h1>
+    <h4></h4>
+
+    <h3>Метод includes()</h3>
+<p>includes(value) проверяет есть ли в массиве элемент со значением value и возвращает true или false соответственно. Область применения этого метода сводится к ситуациям когда необходимо проверить есть ли элемент в массиве и не важна его позиция (индекс).</p>
+
+
+
+const clients = ["Mango", "Ajax", "Poly", "Kiwi"];<br />
+console.log(clients.includes("Poly")); // true<br />
+console.log(clients.includes("Monkong")); // false<br />
+<br />
+
+<p>Проверка множественных условий с includes()</p>
+<p>Условие используя метод includes(), это очень просто и масштабируемо.</p>
+ <br />
+ // Выносим варианты в массив
+const redFruits = ["apple", "strawberry", "cherry", "cranberries"]; <br />
+const fruit = "cherry"; <br />
+// Проверяем наличие элемента <br />
+const hasFruit = redFruits.includes(fruit); <br />
+ <br />
+if (hasFruit) { <br />
+  console.log(`${fruit} is a red fruit!`); <br />
+} <br />
+
+
+    <script src="/js/3-zadanieJS/includes.js" type="module"></script>
+  </body>
+</html>
