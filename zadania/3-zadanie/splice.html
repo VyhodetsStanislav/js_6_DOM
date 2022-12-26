@@ -50,6 +50,35 @@ const colors = ["red", "green", "blue"]; <br />
 colors.splice(2, 0, "purple"); <br />
 console.log(colors); // ["red", "green", "purple", "blue"] <br />
  <br />
+<p> Можно добавить произвольное количество элементов, передав четвертый, пятый аргумент и т. д.</p>
+
+
+const colors = ["red", "green", "blue"];<br />
+
+colors.splice(1, 0, "yellow", "pink");<br />
+console.log(colors); // ["red", "yellow", "pink", "green", "blue"]<br />
+
+<br />
+<h2>Замена</h2>
+<p>Замена это операция добавления в которой удаляются элементы в месте добавления новых. Для этого необходимо передать минимум три аргумента. Количество удаляемых и добавляемых элементов может не совпадать.</p>
+
+
+splice(position, num, new_element_1, new_element_2, ...)<br />
+<p>position - указывает позицию (индекс) первого элемента для удаления
+num - определяет количество удаляемых элементов
+Третий, четвертый и все последующие аргументы - это новые элементы, которые добавляются в массив.
+например, у нас есть массив языков программирования из четырех элементов.</p>
+
+
+const languages = ["C", "C++", "Java", "JavaScript"];<br />
+
+// Заменяем элемент с индексом 1 на новый<br />
+languages.splice(1, 1, "Python");<br />
+console.log(languages); // ["C", "Python", "Java", "JavaScript"]<br />
+
+// Заменяем один элемент (с индексом 2) на несколько<br />
+languages.splice(2, 1, "C#", "Swift", "Go");<br />
+console.log(languages); // ["C", "Python", "C#", "Swift", "Go", "JavaScript"]<br />
 
 
     <script src="/js/3-zadanieJS/splice.js" type="module"></script>

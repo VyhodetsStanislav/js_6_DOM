@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><a href="/index.html">на главную</a></p>
+    <p><a href="/zadania/3-zadanie/zadaci-3.html">Задание 3</a></p>
+    <h1></h1>
+    <h4></h4>
+
+    <h3>Метод concat()</h3>
+    <p>Объединяет два или более массива в один. Он не изменяет массив на котором вызывается, а возвращает новый. Порядок аргументов метода влияет на порядок элементов нового массива.</p>
+<br />
+const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];<br />
+const newClients = ["Monkong", "Singu"];<br />
+<br />
+const allClientsWithOldFirst = oldClients.concat(newClients);<br />
+console.log(allClientsWithOldFirst); // ["Mango", "Ajax", "Poly", "Kiwi", "Monkong", "Singu"]<br />
+
+const allClientsWithNewFirst = newClients.concat(oldClients);<br />
+console.log(allClientsWithNewFirst); // ["Monkong", "Singu", "Mango", "Ajax", "Poly", "Kiwi"]<br />
+<br />
+console.log(oldClients); // ["Mango", "Ajax", "Poly", "Kiwi"]<br />
+console.log(newClients); // ["Monkong", "Singu"]<br />
+<br />
+ <br />
+
+
+    <script src="/js/3-zadanieJS/concat.js" type="module"></script>
+  </body>
+</html>
